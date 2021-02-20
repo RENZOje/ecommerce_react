@@ -58,7 +58,7 @@ class Migration(migrations.Migration):
                 ('name', models.CharField(blank=True, max_length=250, null=True)),
                 ('qty', models.IntegerField(blank=True, default=0, null=True)),
                 ('price', models.DecimalField(blank=True, decimal_places=2, max_digits=7, null=True)),
-                ('image', models.CharField(blank=True, max_length=900, null=True)),
+                ('images', models.CharField(blank=True, max_length=900, null=True)),
                 ('_id', models.AutoField(editable=False, primary_key=True, serialize=False)),
                 ('order', models.ForeignKey(null=True, on_delete=django.db.models.deletion.SET_NULL, to='base.order')),
                 ('product', models.ForeignKey(null=True, on_delete=django.db.models.deletion.SET_NULL, to='base.product')),
